@@ -1,3 +1,5 @@
+wrongAnswers = []
+rightAnswers = []
 
 def question_1():
     print("0 = False AND 1 = True")
@@ -5,9 +7,11 @@ def question_1():
     answer = ("1")
     if question == answer:
         print("Correct!")
+        rightAnswers.append("Q1:Correct")
         return 1
     elif question != answer:
         print("Wrong.")
+        wrongAnswers.append("Q1:Wrong")
         return 0
 
 def question_2():
