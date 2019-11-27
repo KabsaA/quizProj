@@ -19,9 +19,11 @@ def question_2():
     answer = ("1")
     if question == answer:
         print("Correct")
+        rightAnswers.append("Q2:Correct")
         return 1
     elif question != answer:
         print("Wrong")
+        wrongAnswers.append("Q2:Wrong")
         return 0
 
 def question_3():
@@ -36,9 +38,11 @@ E)Kacey Musgraves – Golden Hour
     answer = ("e" or "E")
     if question == answer:
         print("Correct!")
+        rightAnswers.append("Q3:Correct")
         return 1
     elif question != answer:
         print("That's incorrect. The correct answer is c")
+        wrongAnswers.append("Q3:Wrong")
         return 0
 
 def question_4():
@@ -47,10 +51,12 @@ def question_4():
 
     if question == answer:
         print("Correct")
+        rightAnswers.append("Q4:Correct")
         return 1
 
     elif question != answer:
         print("Wrong!")
+        wrongAnswers.append("Q4:Wrong")
         return 0
 
 def question_5():
@@ -62,9 +68,11 @@ def question_5():
     answer = ("a" or 'A')
     if question == answer:
         print("Correct")
+        wrongAnswers.append("Q5:Correct")
         return 1
     elif question != answer:
         print("Wrong! Queen Bey has 20. ")
+        rightAnswers.append("Q5:Wrong")
         return 0
 
 for i in wrongAnswers:
