@@ -50,8 +50,12 @@ def question_4():
         return 0
 
 def question_5():
-    question = input("True or False: Beyonce has 15 Grammys   ")
-    answer = ("0")
+    question = input('''Beyonce has how many Grammys?
+    A) 20
+    B) 10
+    C) 15
+    D) 12   ''')
+    answer = ("a" or 'A')
     if question == answer:
         print("Correct")
         return 1
