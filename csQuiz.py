@@ -67,6 +67,10 @@ def question_5():
         print("Wrong! Queen Bey has 20. ")
         return 0
 
+for i in wrongAnswers:
+    print(i)
+for j in rightAnswers:
+    print(j)
 
 points = question_1() + question_2() + question_3() + question_4() + question_5()
 if points <= 1:
